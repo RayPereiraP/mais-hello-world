@@ -5,11 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/hello-world")
-public class HelloWorldController {
-	
+@RequestMapping("objetivos")
+
+public class ObjetivosController {
 	@GetMapping
-	public String helloWorld() {
-		return "Hello World";
+	public String objetivos() {
+		return "Objetivos da semana: "
+				+ "ficar calma e conseguir compreender os estudos";
 	}
 }
